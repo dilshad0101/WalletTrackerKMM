@@ -23,6 +23,7 @@ lifecycleViewModel = "2.8.0-rc01"
 koin = "3.6.0-alpha3"
 koinComposeMultiplatform = "1.2.0-alpha3"
 navigationCompose = "2.7.0-alpha03"
+lifecycleLivedataCoreKtx = "2.8.1"
 
 
 [libraries]
@@ -53,6 +54,7 @@ androidx-room-compiler = { group = "androidx.room", name = "room-compiler", vers
 androidx-room-paging = { group = "androidx.room", name = "room-paging", version.ref = "androidx-room" }
 androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "androidx-room" }
 sqlite-bundled = { module = "androidx.sqlite:sqlite-bundled", version.ref = "sqlite" }
+androidx-lifecycle-livedata-core-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-core-ktx", version.ref = "lifecycleLivedataCoreKtx" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

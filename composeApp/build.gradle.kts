@@ -58,6 +58,15 @@ kotlin {
             api(libs.koin.core)
             implementation(libs.koin.compose)
             implementation(libs.lifecycle.viewmodel)
+
+            //kamel
+            implementation("media.kamel:kamel-image:0.9.5")
+
+            implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.5.0")
+
+            //datastore
+            implementation("androidx.datastore:datastore-preferences-core:1.1.1")
+
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
@@ -113,6 +122,7 @@ compose.desktop {
 }
 
 dependencies {
+    implementation(libs.androidx.lifecycle.livedata.core.ktx)
     add("kspAndroid", libs.androidx.room.compiler)
     add("kspIosSimulatorArm64", libs.androidx.room.compiler)
     add("kspIosX64", libs.androidx.room.compiler)

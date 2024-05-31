@@ -1,3 +1,4 @@
+import org.koin.core.module.Module
 import platform.UIKit.UIDevice
 
 class IOSPlatform: Platform {

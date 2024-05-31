@@ -1,6 +1,7 @@
 package navigation
 
-sealed class AppScreens(val route: String) {
-    object Main : AppScreens("app_screen_main")
-    object Detail : AppScreens("app_screen_detail")
+sealed class Screen(val route: String){
+    object MainScreen : Screen("Main")
+    object Savings: Screen("editor")
+    object Expense: Screen("editor0")
 }
